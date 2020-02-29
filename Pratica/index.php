@@ -14,7 +14,7 @@
    $c1= new Caneta();
    $c1->setModelo("BIC");
    $c1->setPonta(0.5);
-   print_r($c1);
+   print"Eu tenho uma caneta modelo {$c1->getModelo()} com a ponta {$c1->getPonta()}";
     ?>
     </pre>
 </body>
