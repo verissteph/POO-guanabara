@@ -8,20 +8,16 @@
 </head>
 
 <body>
+<pre>
     <?php
     require_once("Caneta.php");
     $c1 = new Caneta;
+    $c1->modelo = "Bic cristal";
     $c1->cor = "Azul";
-    $c1->ponta = 0.5;
+    $c1->rabiscar();
     $c1->destampar();
-    //print_r($c1);
 
-    $c2 = new Caneta;
-    $c2->cor = "Vermelha";
-    $c2->carga = 50;
-    $c2->tampar();
-    //print_r($c2);
-
+    print_r($c1);
 
     // require_once "Gato.php";
     // $marola = new Gato;
@@ -45,6 +41,7 @@
     //$brisa->dormir();
     // print_r($brisa);
     ?>
+    </pre>
 </body>
 
 </html>
