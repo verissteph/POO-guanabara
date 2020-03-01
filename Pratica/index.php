@@ -8,13 +8,14 @@
 </head>
 
 <body>
-<pre>
+    <pre>
+    <h1>PROJETO CONTROLE REMOTO</h1>
     <?php
-    require_once("Caneta.php");
-   $c1= new Caneta("BIC","Azul",0.5);
-   $c2= new Caneta("KKKKK","Verde",1.0);
-  print_r($c1);
-  print_r($c2);
+    require_once "ControleRemoto.php";
+    $c=new ControleRemoto();
+    $c->ligar();
+    $c->maisVolume();
+    $c->abrirMenu();
     ?>
     </pre>
 </body>
