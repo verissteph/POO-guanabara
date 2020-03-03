@@ -6,13 +6,10 @@ class Funcionario extends Pessoa{
     private $trabalhando;
     //metodos
     public function mudarTrabalho(){
-        if($this->getTrabalhando()){
-            echo "<br>Mudança de trabalho";
-        } else{
-            echo "<br>Impossível mudar o trabalho!";
+        $this->trabalhando != $this->trabalhando;
         }
 
-    }
+    
     //metodos especiais
     public function __construct($se)
     {

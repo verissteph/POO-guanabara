@@ -34,6 +34,7 @@
     $p[3]->setNome("Rickson");
     $p[3]->setIdade(36);
     $p[3]->setSexo("M");
+    $p[3]->mudarTrabalho();
 
     print_r($p[0]);
     print_r($p[1]);
