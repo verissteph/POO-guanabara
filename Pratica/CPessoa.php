@@ -1,12 +1,12 @@
 <?php
-class Pessoa{
+abstract class Pessoa{
     //atributos
-private $nome;
-private $idade;
-private $sexo;
+protected $nome;
+protected $idade;
+protected $sexo;
 
 //metodos
-public function fazerAniv(){
+public final function fazerAniv(){
     $this->idade++;
 }
 //metodos especiais
@@ -37,4 +37,5 @@ public function setSexo($se){
 }
 
 }
+
 ?>

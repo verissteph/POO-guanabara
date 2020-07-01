@@ -5,14 +5,8 @@ class Aluno extends Pessoa{
     private $matricula;
     private $curso;
     //metodos
-    public function cancelarMatr(){
-        if($this->getMatricula()){
-            echo "<p> A matricula ". $this->getMatricula()." foi cancelada<p>";
-            $this->setMatricula(null);
-        } else {
-            echo "<br> Não há matricula para cancelar";
-        }
-
+    public function pagarMensalidade(){
+        echo "<p> Pagando a mensalidade do aluno <strong> ". $this->getNome()." <p>";
     }
     //metodos especiais
     public function __construct($mat,$c)
